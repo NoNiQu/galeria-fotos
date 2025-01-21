@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+.card {
+    max-height: 325px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-#gallery picture img {
-    max-width: 100%;
-    height: auto;
+.card-img-top {
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
