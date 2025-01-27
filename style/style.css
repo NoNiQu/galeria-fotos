@@ -4,6 +4,22 @@
     padding: 0;
 }
 
-.foto:hover{
-    cursor: pointer;
+.foto {
+    position: relative;
+    display: inline-block;
+}
+
+.foto .description {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.foto:hover .description {
+    display: block;
 }
